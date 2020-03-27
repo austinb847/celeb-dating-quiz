@@ -6,20 +6,37 @@ $(document).ready(function() {
 
     if (firstName) {
       if (userGender === "male" && userZodiac === "1") {
-        $("span.name").text(firstName);
-        $("#match3").show();
+        $("#output").html("" +
+        "<div id='match3' >" +
+        "<h2>" + firstName + " here is your suggested Celebrity Match!</h2>" +
+        "<p>The Beatutiful Oprah Winfrey!</p>" +
+        "<img src='img/oprah.jpg'>" +
+        "</div>");
       
       } else if (userGender === "male" && userZodiac === "2") {
-        $("span.name").text(firstName);
-        $("#match4").show();
+        $("#output").html("" +
+        "<div id='match4' >" +
+        "<h2>" + firstName + " here is your suggested Celebrity Match!</h2>" +
+        "<p>The Beatutiful Britney Spears!</p>" +
+        "<img src='img/britney.jpg'>" +
+        "</div>");
       
       } else if (userGender === "female" && userZodiac === "3") {
-        $("span.name").text(firstName);
-        $("#match1").show();
+        $("#output").html("" +
+        "<div id='match1' >" +
+        "<h2>" + firstName + " here is your suggested Celebrity Match!</h2>" +
+        "<p>The Beatutiful Tom Cruise!</p>" +
+        "<img src='img/tom.jpg'>" +
+        "</div>");
       
       } else if (userGender === "female" && userZodiac === "4") {
-        $("span.name").text(firstName);
-        $("#match2").show();
+        $("#output").html("" +
+        "<div id='match2' >" +
+        "<h2>" + firstName + " here is your suggested Celebrity Match!</h2>" +
+        "<p>The Beatutiful Don Chedle!</p>" +
+        "<img src='img/don.jpg'>" +
+        "</div>");
+      
       } else {
         alert("Sorry no match for you! :(");
       }
